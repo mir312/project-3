@@ -1,0 +1,192 @@
+
+div {
+	box-sizing: border-box;
+}
+
+
+header{
+	background: /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
+background: #45484d; /* Old browsers */
+background: -moz-linear-gradient(top,  #45484d 0%, #000000 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #45484d 0%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #45484d 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+;
+	width: 100%;
+	height: 100px;
+	
+}
+body{
+	font-family: Arial, sans-serif;
+	padding: 0;
+	margin: 0;
+	color: #222222;
+	background: url(../img/back1.jpg);
+}
+
+.container{
+	width: 930px;
+	margin: 0 auto;
+}
+.clearfix:after{
+content: "";
+display: table;
+width: 100%;
+clear: both;
+}
+
+.logo{
+margin-top: 41px;
+float: left;
+}
+.nav{
+	float: right;
+    margin-top: 45px;
+}
+.nav a:hover{
+font-size: 20px;
+color: #ff944d;
+
+}
+.menu{
+	padding: 0;
+	margin: 0;
+	display:block;
+
+}
+.menu li{
+	float: left;
+	display: block;
+	margin-right: 41px;
+}
+.menu a{
+	color: #fff;
+	text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.logo {
+	width: 150px;
+	height: 100px;
+	padding: 0;
+	margin: 0;
+}
+
+
+/*SLIDER*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+.slider {
+    margin-top: 150px;
+	width:900px;
+	height: 600px;
+	overflow: hidden;
+	border:5px solid silver;
+}
+
+.middle {
+	position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.navigation {
+	position: absolute;
+	bottom: 16px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+
+}
+.bar {
+	height: 8px;
+	width: 30px;
+	margin: 6px;
+	cursor: pointer;
+	background-color: #ddd;
+	opacity:.7;
+	border-radius: 10px;
+	transition: all .4s ease;
+}
+.bar:hover {
+	opacity: 1s;
+	transform: scale(1.1);
+
+}
+input[name="r"]{
+position: absolute;
+visibility: hidden;
+}
+.slides{
+	width: 400%;
+	height: 100%;
+	display: flex;
+}
+.slide {
+	width: 25%;
+	transition: all .1s ease;
+	cursor: pointer;
+}
+.slide img {
+	width: 100%;
+	height: 100%;
+}
+#r1:checked ~.s1 {
+	margin-left: 0;
+}
+#r2:checked ~.s1 {
+	margin-left: -25%;
+}
+#r3:checked ~.s1 {
+	margin-left: -50%;
+}
+#r4:checked ~.s1 {
+	margin-left: -75%;
+}
+/*УСЛУГИ*/
+.stat {
+
+margin-top: 55%;
+}
+.stat_block{
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	color: #fff;
+
+}
+.stat_item{
+	color: #fff;
+	flex: 1;
+	border-left: 2px solid #aff;
+
+}
+.stat_item:last-child{
+border-right:  2px solid #aff;
+}
+
+.stat_text {
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+#p a{
+	color:#fff; 
+	margin-top: 30px;
+	font-size: 18px;
+	text-decoration: none;
+
+}
+
+#p :hover {
+color:#2E2CC1;
+cursor: pointer;
+
+}
+ 
+	
